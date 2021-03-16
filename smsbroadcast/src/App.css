@@ -357,3 +357,378 @@
   align-items: flex-start;
   width: 100%;
 }
+
+.sms-form-container {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  padding: 30px 30px 30px 30px;
+}
+
+.sms-form-container h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 18px;
+  letter-spacing: 0.002em;
+  color: #3d3d3d;
+  padding-bottom: 10px;
+}
+
+.sms-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.broadcast-name,
+.phonebook,
+.messages {
+  display: flex;
+  flex-direction: column;
+}
+
+.broadcast-name label,
+.phonebook label,
+.messages label {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.002em;
+  color: #4f5154;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.broadcast-name input,
+.phonebook select {
+  width: 270px;
+  height: 44.5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #ffffff;
+  border: 1px solid #bbc1c8;
+  border-radius: 4px;
+}
+
+.broadcast-name ::placeholder {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.002em;
+  color: #dedede;
+}
+.phonebook select {
+  appearance: none;
+  background: url("./img/Union\ 7.svg") no-repeat right;
+  background-position-x: 240px;
+}
+
+.phonebook select:invalid {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.002em;
+  color: #dedede;
+}
+
+.phonebook option {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.002em;
+  color: black;
+}
+
+.messages textarea {
+  width: 734px;
+  height: 152px;
+  background: #ffffff;
+  border: 1px solid #bbc1c8;
+  border-radius: 4px;
+  padding: 15px 15px 15px 15px;
+}
+
+.messages p {
+  align-self: flex-end;
+  margin-right: 5px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 10px;
+  color: #c5c7cd;
+  padding-top: 7px;
+  padding-right: 2px;
+}
+
+.separation {
+  border: 1px solid #bbc1c8;
+  margin-top: 23px;
+  margin-bottom: 30px;
+}
+
+.schedule-info h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.002em;
+  color: #4f5154;
+}
+
+.schedule-info p {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.002em;
+  color: #bbc1c8;
+  margin-top: 5px;
+}
+
+.schedule-form {
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+  justify-content: space-between;
+}
+
+.schedule-form label :first-of-type {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.002em;
+  color: #3d3d3d;
+}
+
+.schedule-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.day-input,
+.time-input,
+.interval-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.002em;
+  color: #3d3d3d;
+}
+
+.day-input div {
+  padding-right: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.day-input label {
+  margin-left: 15px;
+}
+
+.day-checkbox input[type="checkbox"] {
+  position: relative;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.day-checkbox input[type="checkbox"]:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  visibility: visible;
+  height: 14px;
+  line-height: 8px;
+  width: 14px;
+  text-align: center;
+  background: #ffffff;
+  color: #fff;
+  font-weight: 200;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 1px solid #4f5154;
+  border-radius: 3px;
+}
+
+.day-checkbox input[type="checkbox"]:checked:after {
+  content: url(./img//Vector.svg);
+  background: #e81255;
+  border: 1px solid #e81255;
+  border-radius: 3px;
+}
+
+.radio-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.radio-btn label {
+  padding-left: 25px;
+}
+
+.radio-container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 14px;
+  width: 14px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 1px solid #4f5154;
+}
+
+.radio-container input:checked ~ .checkmark {
+  background-color: #e81255;
+  border: 1px solid #e81255;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radio-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.radio-container .checkmark:after {
+  top: 3px;
+  left: 3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: white;
+}
+
+.day-time {
+  position: relative;
+  display: inline-block;
+}
+
+.day-time label {
+  margin-right: 8px;
+  margin-left: 30px;
+}
+
+.day-time input {
+  width: 66px;
+  height: 24px;
+  border: 1px solid #4f5154;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding-left: 5px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.002em;
+  color: #3d3d3d;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  opacity: 1;
+}
+
+.wib {
+  margin-left: 7px;
+}
+
+.day-time-ampm {
+  position: absolute;
+  top: 3px;
+  left: 77px;
+}
+
+.intervals-time label:first-of-type {
+  margin-left: 23px;
+}
+
+.intervals-time label {
+  margin-right: 8px;
+}
+
+#interval-input {
+  width: 46px;
+  height: 24px;
+  background: #e5e5e5;
+  border: 1px solid #979797;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-right: 8px;
+  padding-left: 5px;
+  color: #979797;
+}
+
+#interval-hours {
+  width: 74px;
+  height: 24px;
+  background: #e5e5e5;
+  border: 1px solid #979797;
+  box-sizing: border-box;
+  border-radius: 3px;
+  color: #979797;
+  padding-left: 5px;
+}
+
+.interval-container {
+  position: relative;
+  display: inline-block;
+}
+
+.interval-container input {
+  width: 66px;
+  height: 24px;
+  background: #e5e5e5;
+  border: 1px solid #979797;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding-left: 5px;
+  color: #979797;
+}
+
+.interval-container-ampm {
+  position: absolute;
+  top: 3px;
+  left: 84px;
+  color: #979797;
+}
+
+.send-msg-btn {
+  margin-top: 40px;
+  align-self: flex-end;
+  width: 166px;
+  height: 42px;
+  background: #e81255;
+  border-radius: 8px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
